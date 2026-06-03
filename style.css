@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenofon Lianos — Junior Developer & Marketing Automation Builder</title>
+  <meta name="description" content="Marketing operator who ships working tools with HTML/CSS/JS, n8n automation and AI-assisted development. Available for junior dev & automation roles.">
+  <meta property="og:title" content="Xenofon Lianos — Junior Developer & Automation Builder">
+  <meta property="og:description" content="Portfolio of shipped tools, automations and UX-driven projects.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark">X</span>
+        <span>Xenofon Lianos</span>
+      </a>
+      <nav class="desktop-nav" id="desktopNav">
+        <a href="#about" data-section="about">About</a>
+        <a href="#skills" data-section="skills">Skills</a>
+        <a href="#projects" data-section="projects">Projects</a>
+        <a href="#experience" data-section="experience">Experience</a>
+        <a href="#contact" data-section="contact">Contact</a>
+      </nav>
+      <a href="mailto:lianosxenophon@gmail.com" class="btn-primary" style="padding:0.5rem 0.875rem; font-size:0.875rem;">Hire me</a>
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero container">
+      <div class="hero-content">
+        <span class="badge">
+          <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite;"></span>
+          Available for junior dev & automation roles
+        </span>
+        <h1>I'm <span class="gradient-text">Xenofon</span>.<br>I ship working tools.</h1>
+        <p>Marketing operator turned builder. I combine <strong>HTML/CSS/JS</strong>, <strong>n8n automation</strong> and <strong>AI-assisted development</strong> to ship internal tools that real teams use every day.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View projects →</a>
+          <a href="https://github.com/XenLian78" target="_blank" rel="noreferrer" class="btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/xenofonlianos/" target="_blank" rel="noreferrer" class="btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.7 5 6.3V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            Athens, Greece
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            Remote / Hybrid
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            EL · EN
+          </span>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="glow"></div>
+        <img src="images/portrait.png" alt="Xenofon Lianos" width="360" height="360">
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">About</p>
+        <h2 class="section-title">Marketing brain. Builder hands.</h2>
+      </div>
+      <div class="about-grid">
+        <p>By day I run marketing operations at <strong>Laoudis Foods SA</strong> — Shopify, WordPress, technical SEO, automated workflows. That work taught me how messy real business problems are and how much value a small, sharp tool can deliver.</p>
+        <p>On the side I build those tools. I'm not pretending to be a senior engineer — I'm the person who understands the business, designs the UX, and ships the working software with modern AI tooling. If that combination is the point of the role, we'll get on great.</p>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Toolkit</p>
+        <h2 class="section-title">What I work with</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="card-surface skill-card">
+          <div class="skill-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+          </div>
+          <h3>Languages</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="card-surface skill-card">
+          <div class="skill-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+          </div>
+          <h3>Automation &amp; AI</h3>
+          <ul>
+            <li>n8n</li>
+            <li>Cursor</li>
+            <li>Claude</li>
+            <li>Lovable</li>
+          </ul>
+        </div>
+        <div class="card-surface skill-card">
+          <div class="skill-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 10 6-10 6L2 8z"/><path d="m2 16 10 6 10-6M2 12l10 6 10-6"/></svg>
+          </div>
+          <h3>Platforms</h3>
+          <ul>
+            <li>Shopify</li>
+            <li>WordPress</li>
+            <li>Vercel</li>
+            <li>Git / GitHub</li>
+          </ul>
+        </div>
+        <div class="card-surface skill-card">
+          <div class="skill-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13" cy="11" r="8"/><path d="m4 20 5-5"/></svg>
+          </div>
+          <h3>Design &amp; Growth</h3>
+          <ul>
+            <li>Figma</li>
+            <li>UX Design</li>
+            <li>Technical SEO</li>
+            <li>Analytics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Selected work</p>
+        <h2 class="section-title">Things I've shipped</h2>
+      </div>
+      <div class="projects-stack">
+
+        <!-- Project 1 -->
+        <article class="card-surface project-card">
+          <div class="project-image" style="aspect-ratio:16/10;">
+            <img src="images/barista-app.png" alt="GB Experts Barista Checklist screenshot" loading="lazy">
+            <div class="overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>GB Experts Barista Checklist</h3>
+            <p>A daily ops checklist app, vibe-coded from scratch and now in active production use.</p>
+            <p class="project-impact">→ Used daily by the company's barista team — replaced a paper-based workflow.</p>
+            <div class="project-tags">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://gb-experts-barista-checklist-app.vercel.app/" target="_blank" rel="noreferrer" class="btn-primary" style="padding:0.5rem 0.875rem; font-size:0.875rem;">Live demo →</a>
+              <a href="https://github.com/XenLian78/GB-Experts-Barista-Checklist-App" target="_blank" rel="noreferrer" class="btn-ghost" style="padding:0.5rem 0.875rem; font-size:0.875rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card-surface project-card reverse">
+          <div class="project-image" style="aspect-ratio:16/10;">
+            <img src="images/socialforge.png" alt="SocialForge AI screenshot" loading="lazy">
+            <div class="overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>SocialForge AI</h3>
+            <p>An n8n + AI automation that turns a single product input into platform-ready social content.</p>
+            <p class="project-impact">→ Built to cut down marketing turnaround time on product launches — used internally.</p>
+            <div class="project-tags">
+              <span class="badge">n8n</span>
+              <span class="badge">OpenAI</span>
+              <span class="badge">Automation</span>
+              <span class="badge">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://xenlian78.github.io/socialforge-ai/" target="_blank" rel="noreferrer" class="btn-primary" style="padding:0.5rem 0.875rem; font-size:0.875rem;">Live demo →</a>
+              <a href="https://github.com/XenLian78/socialforge-ai" target="_blank" rel="noreferrer" class="btn-ghost" style="padding:0.5rem 0.875rem; font-size:0.875rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Experience</p>
+        <h2 class="section-title">Where I've worked</h2>
+      </div>
+      <div class="experience-stack">
+        <div class="card-surface experience-card">
+          <div class="exp-header">
+            <h3>Marketing &amp; Communications <span>· Laoudis Foods SA</span></h3>
+            <span class="exp-date">May 2019 — Present</span>
+          </div>
+          <ul>
+            <li>Operates laoudis.gr (Shopify) and gnbexperts.gr (WordPress) end-to-end.</li>
+            <li>Increased organic traffic by 20% via technical SEO and content overhaul.</li>
+            <li>Designed visual content and automated marketing workflows in n8n.</li>
+          </ul>
+        </div>
+        <div class="card-surface experience-card">
+          <div class="exp-header">
+            <h3>Marketing &amp; Operations <span>· Grammatikos Katsouris</span></h3>
+            <span class="exp-date">Oct 2016 — Aug 2018</span>
+          </div>
+          <ul>
+            <li>Managed E-commerce operations across eBay and Amazon.</li>
+            <li>Executed digital campaigns and customer re-engagement strategies.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="edu-grid">
+        <div class="card-surface edu-card">
+          <h4>Google UX Design</h4>
+          <p>Professional Certificate · 2024</p>
+        </div>
+        <div class="card-surface edu-card">
+          <h4>Digital Marketing</h4>
+          <p>ALBA Graduate Business School</p>
+        </div>
+        <div class="card-surface edu-card">
+          <h4>Tourism &amp; Business</h4>
+          <p>Bachelor's degree</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Contact</p>
+        <h2 class="section-title">Let's build something useful.</h2>
+      </div>
+      <div class="card-surface contact-card">
+        <p>Looking for a junior developer who already speaks fluent business? Or someone to automate the boring 80% of your marketing ops? Let's talk.</p>
+        <div class="contact-buttons">
+          <a href="mailto:lianosxenophon@gmail.com" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            lianosxenophon@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/xenofonlianos/" target="_blank" rel="noreferrer" class="btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.7 5 6.3V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/XenLian78" target="_blank" rel="noreferrer" class="btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Xenofon Lianos · Built with React, TanStack &amp; a lot of n8n.</p>
+  </footer>
+
+  <!-- ===== VANILLA JS ===== -->
+  <script>
+    (function() {
+      // Current year in footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Sticky header background
+      const header = document.getElementById('siteHeader');
+      function onScroll() {
+        header.classList.toggle('scrolled', window.scrollY > 8);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Mobile nav toggle
+      const toggle = document.getElementById('mobileNavToggle');
+      const mobileNav = document.getElementById('mobileNav');
+      toggle.addEventListener('click', function() {
+        mobileNav.classList.toggle('open');
+      });
+
+      // Close mobile nav on link click
+      mobileNav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          mobileNav.classList.remove('open');
+        });
+      });
+
+      // Active nav link via IntersectionObserver
+      const navLinks = document.querySelectorAll('#desktopNav a[data-section]');
+      const sections = ['about', 'skills', 'projects', 'experience', 'contact'];
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            navLinks.forEach(function(link) {
+              link.classList.toggle('active', link.dataset.section === entry.target.id);
+            });
+          }
+        });
+      }, { rootMargin: '-40% 0px -55% 0px' });
+
+      sections.forEach(function(id) {
+        const el = document.getElementById(id);
+        if (el) observer.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>
