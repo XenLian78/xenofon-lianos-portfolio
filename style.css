@@ -1,351 +1,669 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xenofon Lianos — Junior Developer & Marketing Automation Builder</title>
-  <meta name="description" content="Marketing operator who ships working tools with HTML/CSS/JS, n8n automation and AI-assisted development. Available for junior dev & automation roles.">
-  <meta property="og:title" content="Xenofon Lianos — Junior Developer & Automation Builder">
-  <meta property="og:description" content="Portfolio of shipped tools, automations and UX-driven projects.">
-  <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* ============================================
+   Xenofon Lianos Portfolio — Pure HTML/CSS
+   ============================================ */
 
-  <!-- ===== HEADER / NAV ===== -->
-  <header class="site-header" id="siteHeader">
-    <div class="container nav-inner">
-      <a href="#top" class="logo">
-        <span class="logo-mark">X</span>
-        <span>Xenofon Lianos</span>
-      </a>
-      <nav class="desktop-nav" id="desktopNav">
-        <a href="#about" data-section="about">About</a>
-        <a href="#skills" data-section="skills">Skills</a>
-        <a href="#projects" data-section="projects">Projects</a>
-        <a href="#experience" data-section="experience">Experience</a>
-        <a href="#contact" data-section="contact">Contact</a>
-      </nav>
-      <a href="mailto:lianosxenophon@gmail.com" class="btn-primary" style="padding:0.5rem 0.875rem; font-size:0.875rem;">Hire me</a>
-      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-        </svg>
-      </button>
-    </div>
-    <nav class="mobile-nav" id="mobileNav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+/* ── CSS Variables (Design Tokens) ── */
+:root {
+  --radius: 0.75rem;
 
-  <main id="top">
+  /* Deep navy canvas with warm teal accent */
+  --background: #111827;
+  --background-rgb: 17, 24, 39;
+  --foreground: #f9fafb;
 
-    <!-- ===== HERO ===== -->
-    <section class="hero container">
-      <div class="hero-content">
-        <span class="badge">
-          <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite;"></span>
-          Available for junior dev & automation roles
-        </span>
-        <h1>I'm <span class="gradient-text">Xenofon</span>.<br>I ship working tools.</h1>
-        <p>Marketing operator turned builder. I combine <strong>HTML/CSS/JS</strong>, <strong>n8n automation</strong> and <strong>AI-assisted development</strong> to ship internal tools that real teams use every day.</p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn-primary">View projects →</a>
-          <a href="https://github.com/XenLian78" target="_blank" rel="noreferrer" class="btn-ghost">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
-            GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/xenofonlianos/" target="_blank" rel="noreferrer" class="btn-ghost">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.7 5 6.3V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
-            LinkedIn
-          </a>
-        </div>
-        <div class="hero-meta">
-          <span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
-            Athens, Greece
-          </span>
-          <span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
-            Remote / Hybrid
-          </span>
-          <span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            EL · EN
-          </span>
-        </div>
-      </div>
-      <div class="hero-image-wrap">
-        <div class="glow"></div>
-        <img src="images/portrait.png" alt="Xenofon Lianos" width="360" height="360">
-      </div>
-    </section>
+  --card: #172033;
+  --card-foreground: #f9fafb;
 
-    <!-- ===== ABOUT ===== -->
-    <section id="about" class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">About</p>
-        <h2 class="section-title">Marketing brain. Builder hands.</h2>
-      </div>
-      <div class="about-grid">
-        <p>By day I run marketing operations at <strong>Laoudis Foods SA</strong> — Shopify, WordPress, technical SEO, automated workflows. That work taught me how messy real business problems are and how much value a small, sharp tool can deliver.</p>
-        <p>On the side I build those tools. I'm not pretending to be a senior engineer — I'm the person who understands the business, designs the UX, and ships the working software with modern AI tooling. If that combination is the point of the role, we'll get on great.</p>
-      </div>
-    </section>
+  --muted: #1e293b;
+  --muted-foreground: #9ca3af;
 
-    <!-- ===== SKILLS ===== -->
-    <section id="skills" class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Toolkit</p>
-        <h2 class="section-title">What I work with</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="card-surface skill-card">
-          <div class="skill-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
-          </div>
-          <h3>Languages</h3>
-          <ul>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-          </ul>
-        </div>
-        <div class="card-surface skill-card">
-          <div class="skill-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
-          </div>
-          <h3>Automation &amp; AI</h3>
-          <ul>
-            <li>n8n</li>
-            <li>Cursor</li>
-            <li>Claude</li>
-            <li>Lovable</li>
-          </ul>
-        </div>
-        <div class="card-surface skill-card">
-          <div class="skill-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 10 6-10 6L2 8z"/><path d="m2 16 10 6 10-6M2 12l10 6 10-6"/></svg>
-          </div>
-          <h3>Platforms</h3>
-          <ul>
-            <li>Shopify</li>
-            <li>WordPress</li>
-            <li>Vercel</li>
-            <li>Git / GitHub</li>
-          </ul>
-        </div>
-        <div class="card-surface skill-card">
-          <div class="skill-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13" cy="11" r="8"/><path d="m4 20 5-5"/></svg>
-          </div>
-          <h3>Design &amp; Growth</h3>
-          <ul>
-            <li>Figma</li>
-            <li>UX Design</li>
-            <li>Technical SEO</li>
-            <li>Analytics</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  --border: #2d3a4f;
+  --ring: #5eead4;
 
-    <!-- ===== PROJECTS ===== -->
-    <section id="projects" class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Selected work</p>
-        <h2 class="section-title">Things I've shipped</h2>
-      </div>
-      <div class="projects-stack">
+  --accent: #5eead4;
+  --accent-foreground: #0f172a;
 
-        <!-- Project 1 -->
-        <article class="card-surface project-card">
-          <div class="project-image" style="aspect-ratio:16/10;">
-            <img src="images/barista-app.png" alt="GB Experts Barista Checklist screenshot" loading="lazy">
-            <div class="overlay"></div>
-          </div>
-          <div class="project-info">
-            <h3>GB Experts Barista Checklist</h3>
-            <p>A daily ops checklist app, vibe-coded from scratch and now in active production use.</p>
-            <p class="project-impact">→ Used daily by the company's barista team — replaced a paper-based workflow.</p>
-            <div class="project-tags">
-              <span class="badge">HTML</span>
-              <span class="badge">CSS</span>
-              <span class="badge">JavaScript</span>
-              <span class="badge">Vercel</span>
-            </div>
-            <div class="project-links">
-              <a href="https://gb-experts-barista-checklist-app.vercel.app/" target="_blank" rel="noreferrer" class="btn-primary" style="padding:0.5rem 0.875rem; font-size:0.875rem;">Live demo →</a>
-              <a href="https://github.com/XenLian78/GB-Experts-Barista-Checklist-App" target="_blank" rel="noreferrer" class="btn-ghost" style="padding:0.5rem 0.875rem; font-size:0.875rem;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
-                Source
-              </a>
-            </div>
-          </div>
-        </article>
+  --primary: #5eead4;
+  --primary-foreground: #0f172a;
 
-        <!-- Project 2 -->
-        <article class="card-surface project-card reverse">
-          <div class="project-image" style="aspect-ratio:16/10;">
-            <img src="images/socialforge.png" alt="SocialForge AI screenshot" loading="lazy">
-            <div class="overlay"></div>
-          </div>
-          <div class="project-info">
-            <h3>SocialForge AI</h3>
-            <p>An n8n + AI automation that turns a single product input into platform-ready social content.</p>
-            <p class="project-impact">→ Built to cut down marketing turnaround time on product launches — used internally.</p>
-            <div class="project-tags">
-              <span class="badge">n8n</span>
-              <span class="badge">OpenAI</span>
-              <span class="badge">Automation</span>
-              <span class="badge">JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="https://xenlian78.github.io/socialforge-ai/" target="_blank" rel="noreferrer" class="btn-primary" style="padding:0.5rem 0.875rem; font-size:0.875rem;">Live demo →</a>
-              <a href="https://github.com/XenLian78/socialforge-ai" target="_blank" rel="noreferrer" class="btn-ghost" style="padding:0.5rem 0.875rem; font-size:0.875rem;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
-                Source
-              </a>
-            </div>
-          </div>
-        </article>
+  --accent-glow: #7efce8;
+}
 
-      </div>
-    </section>
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    <!-- ===== EXPERIENCE ===== -->
-    <section id="experience" class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Experience</p>
-        <h2 class="section-title">Where I've worked</h2>
-      </div>
-      <div class="experience-stack">
-        <div class="card-surface experience-card">
-          <div class="exp-header">
-            <h3>Marketing &amp; Communications <span>· Laoudis Foods SA</span></h3>
-            <span class="exp-date">May 2019 — Present</span>
-          </div>
-          <ul>
-            <li>Operates laoudis.gr (Shopify) and gnbexperts.gr (WordPress) end-to-end.</li>
-            <li>Increased organic traffic by 20% via technical SEO and content overhaul.</li>
-            <li>Designed visual content and automated marketing workflows in n8n.</li>
-          </ul>
-        </div>
-        <div class="card-surface experience-card">
-          <div class="exp-header">
-            <h3>Marketing &amp; Operations <span>· Grammatikos Katsouris</span></h3>
-            <span class="exp-date">Oct 2016 — Aug 2018</span>
-          </div>
-          <ul>
-            <li>Managed E-commerce operations across eBay and Amazon.</li>
-            <li>Executed digital campaigns and customer re-engagement strategies.</li>
-          </ul>
-        </div>
-      </div>
+html {
+  scroll-behavior: smooth;
+}
 
-      <div class="edu-grid">
-        <div class="card-surface edu-card">
-          <h4>Google UX Design</h4>
-          <p>Professional Certificate · 2024</p>
-        </div>
-        <div class="card-surface edu-card">
-          <h4>Digital Marketing</h4>
-          <p>ALBA Graduate Business School</p>
-        </div>
-        <div class="card-surface edu-card">
-          <h4>Tourism &amp; Business</h4>
-          <p>Bachelor's degree</p>
-        </div>
-      </div>
-    </section>
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(60% 50% at 30% 20%, rgba(94, 234, 212, 0.18), transparent 70%),
+    radial-gradient(50% 40% at 90% 80%, rgba(150, 100, 255, 0.12), transparent 70%);
+  background-attachment: fixed;
+}
 
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Contact</p>
-        <h2 class="section-title">Let's build something useful.</h2>
-      </div>
-      <div class="card-surface contact-card">
-        <p>Looking for a junior developer who already speaks fluent business? Or someone to automate the boring 80% of your marketing ops? Let's talk.</p>
-        <div class="contact-buttons">
-          <a href="mailto:lianosxenophon@gmail.com" class="btn-primary">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-            lianosxenophon@gmail.com
-          </a>
-          <a href="https://www.linkedin.com/in/xenofonlianos/" target="_blank" rel="noreferrer" class="btn-ghost">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.7 5 6.3V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/XenLian78" target="_blank" rel="noreferrer" class="btn-ghost">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
-            GitHub
-          </a>
-        </div>
-      </div>
-    </section>
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
 
-  </main>
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="site-footer container">
-    <p>© <span id="year"></span> Xenofon Lianos · Built with React, TanStack &amp; a lot of n8n.</p>
-  </footer>
+img {
+  max-width: 100%;
+  display: block;
+}
 
-  <!-- ===== VANILLA JS ===== -->
-  <script>
-    (function() {
-      // Current year in footer
-      document.getElementById('year').textContent = new Date().getFullYear();
+/* ── Utilities ── */
+.container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 
-      // Sticky header background
-      const header = document.getElementById('siteHeader');
-      function onScroll() {
-        header.classList.toggle('scrolled', window.scrollY > 8);
-      }
-      window.addEventListener('scroll', onScroll, { passive: true });
-      onScroll();
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  background: rgba(94, 234, 212, 0.08);
+  color: var(--accent);
+}
 
-      // Mobile nav toggle
-      const toggle = document.getElementById('mobileNavToggle');
-      const mobileNav = document.getElementById('mobileNav');
-      toggle.addEventListener('click', function() {
-        mobileNav.classList.toggle('open');
-      });
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--accent), var(--accent-glow));
+  color: var(--accent-foreground);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 0 1px rgba(94, 234, 212, 0.3), 0 10px 40px -10px rgba(94, 234, 212, 0.4);
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+}
 
-      // Close mobile nav on link click
-      mobileNav.querySelectorAll('a').forEach(function(link) {
-        link.addEventListener('click', function() {
-          mobileNav.classList.remove('open');
-        });
-      });
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--foreground);
+  transition: background 0.2s ease, border-color 0.2s ease;
+  font-size: 0.9rem;
+}
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--accent);
+}
 
-      // Active nav link via IntersectionObserver
-      const navLinks = document.querySelectorAll('#desktopNav a[data-section]');
-      const sections = ['about', 'skills', 'projects', 'experience', 'contact'];
-      const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            navLinks.forEach(function(link) {
-              link.classList.toggle('active', link.dataset.section === entry.target.id);
-            });
-          }
-        });
-      }, { rootMargin: '-40% 0px -55% 0px' });
+.card-surface {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 10px 40px -20px rgba(0, 0, 0, 0.6);
+}
 
-      sections.forEach(function(id) {
-        const el = document.getElementById(id);
-        if (el) observer.observe(el);
-      });
-    })();
-  </script>
+.section-eyebrow {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
 
-</body>
-</html>
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* ── Header / Nav ── */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+.site-header.scrolled {
+  background: rgba(17, 24, 39, 0.8);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.logo-mark {
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 0.375rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-glow));
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav a {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  transition: color 0.2s, background 0.2s;
+}
+.desktop-nav a:hover,
+.desktop-nav a.active {
+  color: var(--accent);
+  background: rgba(94, 234, 212, 0.08);
+}
+
+.mobile-nav-toggle {
+  display: flex;
+  background: none;
+  border: none;
+  color: var(--foreground);
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(17, 24, 39, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.5rem;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.mobile-nav.open {
+  display: flex;
+}
+.mobile-nav a {
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+.mobile-nav a:hover {
+  color: var(--accent);
+}
+
+/* ── Hero ── */
+.hero {
+  display: grid;
+  gap: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.hero-content h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-top: 1.25rem;
+}
+
+.hero-content h1 .gradient-text {
+  background: linear-gradient(135deg, var(--accent), var(--accent-glow));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-content p {
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+  color: var(--muted-foreground);
+  max-width: 36rem;
+  line-height: 1.6;
+}
+
+.hero-content p strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.hero-cta {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero-meta {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.hero-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-image-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-wrap .glow {
+  position: absolute;
+  inset: -1.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-glow));
+  opacity: 0.2;
+  filter: blur(3rem);
+}
+
+.hero-image-wrap img {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+/* ── Sections ── */
+section {
+  scroll-margin-top: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section-header {
+  margin-bottom: 2.5rem;
+}
+
+/* ── About ── */
+.about-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about-grid p {
+  font-size: 1.125rem;
+  color: var(--muted-foreground);
+  line-height: 1.7;
+}
+
+.about-grid p strong {
+  color: var(--foreground);
+}
+
+/* ── Skills ── */
+.skills-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-card {
+  padding: 1.25rem;
+}
+
+.skill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  background: rgba(94, 234, 212, 0.1);
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.skill-card h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.skill-card ul {
+  margin-top: 0.75rem;
+  list-style: none;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.skill-card li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+.skill-card li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ── Projects ── */
+.projects-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  overflow: hidden;
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  background: var(--muted);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.7s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-image .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(23, 32, 51, 0.8), transparent 60%);
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.project-info > p {
+  margin-top: 0.75rem;
+  color: var(--muted-foreground);
+}
+
+.project-impact {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--accent);
+}
+
+.project-tags {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-links {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* ── Experience ── */
+.experience-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.experience-card {
+  padding: 1.5rem;
+}
+
+.experience-card .exp-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.experience-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.experience-card h3 span {
+  color: var(--muted-foreground);
+  font-weight: 400;
+}
+
+.experience-card .exp-date {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted-foreground);
+}
+
+.experience-card ul {
+  margin-top: 0.75rem;
+  list-style: none;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.experience-card li {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+.experience-card li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 0.55em;
+  flex-shrink: 0;
+}
+
+/* ── Education ── */
+.edu-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.edu-card {
+  padding: 1.25rem;
+}
+
+.edu-card h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.edu-card p {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}
+
+/* ── Contact ── */
+.contact-card {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-card > p {
+  margin: 0 auto;
+  max-width: 36rem;
+  font-size: 1.125rem;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+}
+
+.contact-buttons {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+/* ── Footer ── */
+.site-footer {
+  padding: 2.5rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+/* ── Animations ── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ── Responsive ── */
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.75rem;
+  }
+
+  .hero-image-wrap img {
+    width: 360px;
+    height: 360px;
+  }
+
+  .desktop-nav {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  .mobile-nav-toggle {
+    display: none;
+  }
+
+  section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-card.reverse .project-image {
+    order: 2;
+  }
+
+  .project-info {
+    padding: 2rem;
+  }
+
+  .edu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-card {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
